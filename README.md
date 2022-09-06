@@ -23,7 +23,8 @@ URL: Javascript
 ```
 https://skyline.maps.almav.com/maps/api/js?key=<chave>&callback=<retorno>” async>
 ```
-
-Atenção: ao incluir o Mapa Interativo via iFrame, funções como o botão de GPS e tela cheia não irão funcionar. Utilize sempre a implementação por meio do código javascript.
+IMPORTANTE
+1. Ao incluir o Mapa Interativo via iFrame, funções como o botão de GPS e tela cheia não irão funcionar. Utilize sempre a implementação por meio do código javascript.
+2. No console (Painel) de administração do Mapa Interativo, será necessário incluir todos os domínios permitidos para integração. 
 
 Visite https://almav.com
