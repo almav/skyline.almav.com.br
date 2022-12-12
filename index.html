@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR" translate="no">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa Interativo</title>
+    <meta name="google" content="notranslate">
+    
+    <title>QuintaEcoPark</title>
+    <style type="text/css">
+        /* Always set the map height explicitly to define the size of the div
+            * element that contains the map. */
+        #map {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script>
+        let map;
+        function initMap() {
+            map = new almav.maps.Map(document.getElementById("map"), {
+                "settings-id": 1,
+            });
+        }
+    </script>
 </head>
+
 <body>
-    Mapa Interativo API - V1
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+        src="https://h3-skyline.maps.almav.com/maps/api/js?key=583f1cc9-dbc9-4f8d-a02f-7a598978bfbc&callback=initMap"
+        async defer></script>
 </body>
+
 </html>
