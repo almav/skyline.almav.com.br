@@ -21,7 +21,7 @@ function initMap() {
 
 URL: Javascript
 ```
-<script src=”https://skyline.maps.almav.com/maps/api/js?key=<chave>&callback=<retorno>” async></script>
+<script src=”https://h3-skyline.maps.almav.com/maps/api/js?key=<chave>&callback=<retorno>” async></script>
 ```
 IMPORTANTE
 1. Ao incluir o Mapa Interativo via iFrame, funções como o botão de GPS e tela cheia não irão funcionar. Utilize sempre a implementação por meio do código javascript.
